@@ -270,7 +270,6 @@ final class OSXStateDelegate<
                 let pidString = (pid == nil) ? "??" : String(pid!)
                 log.notice("Could not watch application \(bundleID ?? "") (pid=\(pidString)): "
                          + String(describing: error))
-                throw error
             }
     }
 
